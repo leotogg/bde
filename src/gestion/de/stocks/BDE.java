@@ -15,10 +15,15 @@ public class BDE {
     public Produit[] allProduits;
     private Facture[] allFactures; 
     private String nomBDE;
-    public BDE(String nomBDE, Produit[] allProduits, Facture[] allFactures){
+    private int nbProd;
+    
+    public BDE(String nomBDE){
+        Produit[] allProduits = new Produit[100];
+        Facture[] allFactures = new Facture[1000];
         this.nomBDE = nomBDE;
         this.allProduits = allProduits;
         this.allFactures = allFactures;
+        this.nbProd = 0;
     }
     
     public Produit rechercher(String reference){
@@ -37,25 +42,34 @@ public class BDE {
     }
     public void ajouterProduit (String designation, String reference,double prixVente,int enStock,float contenance, LocalDate dateLimiteBoisson){
         Boisson produit = new Boisson( designation,  reference, prixVente, enStock, contenance, dateLimiteBoisson);
+        int index = this.nbProd + 1;
+        this.allProduits[index] = produit;
+        this.nbProd += 1;
     }
     public void ajouterProduit (String designation, String reference,double prixVente,int enStock){
         ProduitDerive produit = new ProduitDerive (designation, reference,prixVente,enStock);
+        int index = this.nbProd + 1;
+        this.allProduits[index] = produit;
+        this.nbProd += 1;
     }
     public void ajouterProduit (String designation, String reference,double prixVente,int enStock, String couleur, int taille, int AnneeMiseEnStock){
         ProduitDeriveTextile produit = new ProduitDeriveTextile (designation, reference,prixVente,enStock, couleur, taille, AnneeMiseEnStock);
+        int index = this.nbProd + 1;
+        this.allProduits[index] = produit;
+        this.nbProd += 1;
     }
-//    public void listerRetraitProduits (){
-//        for (int i = 0; i<this.allProduits.length; i++){
-////            if(allProduits[i].estAretirer(allProduits[i])){
+    public void listerRetraitProduits (){
+        for (int i = 0; i<this.allProduits.length; i++){
+            if(allProduits[i].LocalDate < 0){
 //             int AnneeMiseEnStock = allProduits[i].getAnneeMiseEnStock();
-////            if(allProduits[i] instanceof Boisson){
-////                if(allProduits[i].estAretirer(allProduits[i])){
-////                
-////            }
-////            }
-////                if(allProduits[i].estAretirer(allProduits[i]),this.){
+//            if(allProduits[i] instanceof Boisson){
+//                if(allProduits[i].estAretirer(allProduits[i])){
 //                
-////            }          
-//        }
-//    }
+//            }
+//            }
+//                if(allProduits[i].estAretirer(allProduits[i]),this.){
+                
+            }          
+        }
+    }
 }

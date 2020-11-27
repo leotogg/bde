@@ -56,7 +56,7 @@ public class GestionDeStocks {
            allProduits [0] = boisson;
            Facture[] allFactures = new Facture[1];
            allFactures [0] = facture;
-           BDE bde = new BDE("nomBDE",allProduits, allFactures);
+           BDE bde = new BDE("nomBDE");
            System.out.println(boisson.getDate());
            
            System.out.println(boisson.getClass());

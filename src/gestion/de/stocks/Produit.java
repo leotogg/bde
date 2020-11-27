@@ -44,11 +44,11 @@ public class Produit {
     public String ref(){
         return reference;
     }
-    public boolean estAretirer(Boisson boisson){
-        LocalDate todayDate = LocalDate.now();
-        LocalDate dateLimiteBoisson = boisson.getDate();
-        return(todayDate.isAfter(dateLimiteBoisson));
-    }
+//    public boolean estAretirer(Produit produit){
+//        LocalDate todayDate = LocalDate.now();
+//        LocalDate dateLimiteBoisson = produit.getDate();
+//        return(todayDate.isAfter(dateLimiteBoisson));
+//    }
     
 //    public boolean estAretirer(ProduitDeriveTextile produit){    
 //        LocalDate todayDate = LocalDate.now();
