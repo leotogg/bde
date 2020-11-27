@@ -64,8 +64,7 @@ public class Produit {
 //        int AnneeMiseEnStock = produit.getAnneeMiseEnStock();
 //        return(todayDateYear > AnneeMiseEnStock + 4);
 //    }
-        
-        
+                
     
     
 }
