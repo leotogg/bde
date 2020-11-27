@@ -61,7 +61,7 @@ public class GestionDeStocks {
            
            System.out.println(boisson.getClass());
            System.out.println(bde.allProduits[0].getClass());
-           System.out.println(bde.allProduits[0].estAretirer(bde.allProduits[0]));
+//           System.out.println(bde.allProduits[0].estAretirer(bde.allProduits[0]));
 //           bde.listerRetraitProduits();
            
     }
