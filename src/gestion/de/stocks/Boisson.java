@@ -17,12 +17,12 @@ import java.util.Date;
 public class Boisson extends Produit {
     
     private float contenance;
-    private LocalDate dateLimiteBoisson;
+    private LocalDate dateLimiteBoisson;    
     
-    public Boisson(String designation, String reference,double prixVente,int enStock,float contenance, LocalDate dateLimiteBoisson){
-        super(designation, reference, prixVente, enStock);
+    public Boisson(String designation,double prixVente,int enStock,float contenance, LocalDate dateLimiteBoisson){
+        super(designation, prixVente, enStock);
         this.dateLimiteBoisson = dateLimiteBoisson;
-        this.contenance = contenance;  
+        this.contenance = contenance;          
     }
     public LocalDate getDate(){
         return this.dateLimiteBoisson;

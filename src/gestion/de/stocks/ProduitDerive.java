@@ -12,8 +12,8 @@ import java.time.LocalDate;
  * @author Léo Togg
  */
 public class ProduitDerive extends Produit {
-    public ProduitDerive(String designation, String reference,double prixVente,int enStock){
-        super(designation, reference, prixVente, enStock);
+    public ProduitDerive(String designation,double prixVente,int enStock){
+        super(designation, prixVente, enStock);
     }
 //    public boolean estAretirer(){
 //        return false;

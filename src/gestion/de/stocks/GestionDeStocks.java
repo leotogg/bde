@@ -47,7 +47,7 @@ public class GestionDeStocks {
 //            tab[3] = 1;
 //            System.out.print(tab);
 //            tab += [2];
-           Boisson boisson = new Boisson("designation",  "reference",10,1, 2, date);
+           Boisson boisson = new Boisson("designation",10,1, 2, date);
            LigneFacturation lf = new LigneFacturation(1,10 );
            LigneFacturation[] produitsAchetes = new LigneFacturation[1];
            produitsAchetes[0] = lf;

@@ -18,9 +18,9 @@ public class Produit {
     private double prixVente;
     private int enStock;
     
-    public Produit(String designation, String reference,double prixVente,int enStock ){
+    public Produit(String designation,double prixVente,int enStock ){
         this.designation = designation;
-        this.reference = reference;
+//        this.reference = reference;
         this.prixVente = prixVente;
         this.enStock = enStock;
     }
@@ -41,9 +41,17 @@ public class Produit {
     public void calculPrix(double reduction) {
         prixVente *= (1-(reduction/100));        
     }
-    public String ref(){
+    public String getref(){
         return reference;
     }
+    
+    public void reference(String lettre, int nb){
+        reference = lettre + nb;
+    }
+    
+    public boolean estAretirer(){
+        return false;
+    }  
 //    public boolean estAretirer(Produit produit){
 //        LocalDate todayDate = LocalDate.now();
 //        LocalDate dateLimiteBoisson = produit.getDate();
