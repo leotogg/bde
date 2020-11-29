@@ -44,7 +44,7 @@ public class BDE {
         Produit produitEnCours = rechercher(reference);
         produitEnCours.ajouterStock(nbExemplaires);
     }
-    public void ajouterProduit (String designation,double prixVente,int enStock,float contenance, LocalDate dateLimiteBoisson){
+    public void ajouterProduit (String designation,double prixVente,int enStock, LocalDate dateLimiteBoisson, float contenance){
         Boisson produit = new Boisson( designation, prixVente, enStock, contenance, dateLimiteBoisson);
         int index = this.nbProd + 1;
         produit.reference("B",nblotb);
