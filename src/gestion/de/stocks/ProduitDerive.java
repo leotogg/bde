@@ -15,8 +15,8 @@ public class ProduitDerive extends Produit {
     public ProduitDerive(String designation,double prixVente,int enStock){
         super(designation, prixVente, enStock);
     }
-//    public boolean estAretirer(){
-//        return false;
-//    }
+    public boolean estAretirer(){
+        return false;
+    }
 }
 
